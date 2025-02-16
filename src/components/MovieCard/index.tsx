@@ -26,10 +26,10 @@ export default function MovieCard(props: Props) {
       </div>
 
       <div className="absolute bottom-0 bg-[linear-gradient(to_bottom,_#00000000,_#00000090)] h-52 w-full flex flex-col justify-end p-2.5">
-        <p className="text-primary text-sm mb-1.5">{movie.title}</p>
+        <p className="text-slate-50 text-sm mb-1.5">{movie.title}</p>
         {movie.vote_average > 0 && <StarRating rating={movie.vote_average} />}
         <div
-          className={`text-primary text-sm mt-2 h-0 opacity-0 group-hover:opacity-100 transition-all duration-600 ${
+          className={`text-slate-50 text-sm mt-2 h-0 opacity-0 group-hover:opacity-100 transition-all duration-600 ${
             movie.overview ? "group-hover:h-24" : "h-12"
           }`}
         >
